@@ -1,0 +1,167 @@
+SEÇÃO 02: Introdução e Preparação do Ambiente
+
+
+3. O que é React?
+
+O React é uma biblioteca JavaScript declarativa, eficiente e flexível para criar interfaces com o usuário.
+
+É possível criar componentes que podem ser utilizados em uma aplicação Web.
+
+
+
+O que é DOM?
+
+Quando uma página da Web é carregada, o navegador cria uma hierarquia dos objetos chamada de Modelo de Documento por Objetos.
+
+
+
+Como o React funciona?
+
+Os componentes ficam interligados, em uma espécie de hierarquia, "árvore" e cada componente têm sua função.
+
+Esta estrutura criada pelo React é chamada de DOM virtual, onde são feitas todas as alterações necessárias antes de 
+alterar o DOM real do navegador.
+
+Uma vantagem do React é que ele muda apenas o que precisa ser mudado.
+
+
+
+
+
+4. Principais Conceitos
+
+
+Introduzindo JSX
+
+Extensão de sintaxe para Javascript.
+
+
+const elemento = <h1>Bom dia!</h1>;
+
+
+const nome = 'João';
+const elemento = <h1>Bom dia {nome}!</h1>;
+
+const soma = <div>Resultado: {3+5}</div>;
+
+const data= <p>Compra feita em {formatarData(dataPedido)}</p>;
+
+
+
+function ola(usuario){
+
+	if(usuario){
+		return <h1>Olá, {formatarNome(usuario)}!</h1>;
+	}
+	return <h1>Olá, estranho...</h1>;
+}
+
+
+Atributos com JSX
+
+
+const elemento = <div tabIndex="0">...</div>;
+const elemento = <img src={usuario.avatarUrl} />;
+
+
+
+
+HTML
+tabindex="0"
+class="meuEstilo"
+onclick=""
+
+JSX (PascalCase)
+
+tabIndex="0"
+className="meuEstilo"
+onClick=""
+
+
+
+O que é um Componente?
+
+Componentes permitem que você divida a UI em partes independentes, reutilizáveis e pense em cada parte isoladamente.
+
+
+function BemVindo(props){
+	return <p>Olá, {props.nome}</p>;
+}
+
+
+class BemVindo extends React.Component{
+	render(){
+		return <h1>Hello, {this.props.nome}</h1>;
+	}
+}
+
+
+Renderizando Componentes
+
+function BemVindo(props){
+	return <p>Olá, {props.nome}</p>;
+
+}
+
+<BemVindo nome="Eduardo" />
+
+
+function App(){
+	return (
+		<div>
+			<BemVindo nome="Eduardo" />
+			<BemVindo nome="Pedro" />
+			<BemVindo nome="Paulo" />
+		</div>
+	);
+}
+
+
+
+PROPS X STATE
+
+
+props => Component => DOM
+
+
+state pertence somente ao componente -  Component   => DOM
+					state
+
+
+
+5. Alternativas ao React.
+
+Angular
+
+Vue
+
+
+REACT
+
+Fácil aprendizado, design simples e uso do JSX
+Fléxivel, pode ser integrado com outras bibliotecas JavaScript
+Compatibilidade
+Rápido, graças ao DOM Virtual.
+
+
+
+NodeJS
+Ambiente de execução para Javscript.
+https://nodejs.org/en/download/
+
+Visual Studio Code
+https://code.visualstudio.com
+
+Chocolatey
+https://chocolatey.org
+
+6. Preparação do Ambiente no Windows.
+
+
+
+7. Preparação do Ambiente no Linux.
+
+
+8. Preparação do Ambiente no Mac.
+
+
