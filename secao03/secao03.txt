@@ -1,0 +1,50 @@
+Seção 03: Revisão de JavaScript Moderno.
+
+9. O que vamos aprender nesta seção?
+
+Conceitos de JavaScript Moderno
+
+10. Declaração de variáveis - let e const
+
+
+folder javascript
+
+
+11. Arrow Functions
+
+//Arrow Functions
+
+const ola2 = () =>{
+    return 'Olá novamente!';
+}
+console.log(ola2());
+
+
+12. Módulos - Importação e Exportação
+
+Scripts que podem ser usados em outros arquivos.
+
+Open Folder Settings.
+
+Code Runner Executor Map
+
+
+ "code-runner.executorMap":{
+        "javascript": "node --experimental-modules",
+
+
+13. Classes, propriedades e métodos
+
+
+
+14. Operadores spread e rest
+
+
+15. Desestruturação
+
+
+
+16. Recapitulando
+
+
+
