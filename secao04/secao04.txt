@@ -44,6 +44,8 @@ Extensão Chrome: React Developer Tools.
 
 21. Propriedades dos componentes
 
+
+
 22. Estado da aplicação
 
 23. Manipulando o estado

@@ -2,11 +2,14 @@ import React from 'react';
 import './Comentario.css';
 
 //JSX
-const Comentario = () => (
-    <div className='Comentario'>
-        <div>Eduardo:</div>
-        <div>Olá, tudo bem?</div>
-    </div>
+const Comentario = props => ( 
+        <div className='Comentario'>
+            <h2>{props.nome}</h2>
+            <p>{props.email}</p>
+            <p>{props.children}</p>
+            <p>{props.data.toString()}</p>
+        </div>
+        
 );
 
 export default Comentario;
