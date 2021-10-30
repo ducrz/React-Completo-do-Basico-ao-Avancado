@@ -66,6 +66,8 @@ Extensão Chrome: React Developer Tools.
 
 26. Estilo dos componentes
 
+
+
 27. Instalando pacotes
 
 28. Recapitulando
