@@ -1,0 +1,120 @@
+Seção 05: Usando React com requisições HTTP/ AJAX
+
+29. O que vamos aprender nesta seção?
+
+
+30. Métodos de requisições HTTP
+
+HTTP
+
+Protocolo que permite obtenção de recursos.
+
+
+Cliente -Requisição > Servidor
+	<- resposta 
+	   (status)
+
+Códigos de Status
+
+1xx - Repostas de informação
+2xx - Respostas de sucesso
+3xx - Redirecionamentos
+4xx - Erros do cliente
+5xx - Erro do servidor
+
+
+REST
+
+Representational State Transfer
+
+Transferência Representacional de Estado
+
+Princípios que permitem a criação de APIs com interfaces bem definidas, possibilitando que as aplicações façam comunicações mais facilmente entre si.
+
+
+React     ----> www.meusite.com/api/usuarios  ->  SERVIDOR
+
+
+GET - Retorna - www.meusite.com/api/usuarios
+
+POST - Envia - www.meusite.com/api/usuarios
+
+PUT - Atualiza - www.meusite.com/api/usuarios/5
+
+DELETE - Remover - www.meusite.com/api/usuarios/5
+
+
+
+GET 
+
+Serve para retornar dados de uma requisição.
+
+GET www.meusite.com/api/usuarios
+
+
+
+POST
+
+Serve para registrar os dados novos.
+
+
+POST www.meusite.com/api/usuarios
+
+
+
+PUT
+
+Parecido com o POST, mas serve para atualizar os dados existentes
+
+PUT www.meusite.com/api/usuarios/98
+
+
+DELETE
+
+
+Serve para apagar dados.
+
+DELETE www.meusite.com/api/usuarios/5
+
+
+
+31. Ciclo de vida de um componente
+
+https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
+diagrama-ciclo-de-vida.png
+
+MONTAGEM
+
+	
+
+
+ATUALIZAÇÃO
+
+
+
+DESMONTAGEM
+
+
+32. Métodos de ciclo de vida de um componente
+
+
+npx create-react-app react-ciclodevida
+
+33. Preparando a aplicação
+
+
+npm install na pasta do projeto.
+
+
+34. Método GET
+
+reqres.in
+
+35. Método POST
+
+36. Método DELETE
+
+
+37. Recapitulando
+
