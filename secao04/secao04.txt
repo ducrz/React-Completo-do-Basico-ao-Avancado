@@ -57,6 +57,8 @@ Extensão Chrome: React Developer Tools.
 
 24. Tratamento de eventos
 
+
+
 25. Interação entre componentes
 
 26. Estilo dos componentes

@@ -19,25 +19,27 @@ class App extends Component{
         data: new Date(2021, 10, 29, 18, 21, 0),
         mensagem: 'Olá, tudo bem sim....'
       }
-    ]   
+    ],
+    novoComentario:{
+      nome:'',
+      email:'',
+      mensagem:''
+    }   
   }
-  adicionarComentario = () =>{
-    console.log("Adicionando comentário...")
+  adicionarComentario = evento =>{
+    evento.preventDefault();
 
-    const novoComentario = {
-      nome:'Maria',
-      email: 'maria@gmail.com',
-      data: new Date(),
-      mensagem: 'Olá Pessoal!'
-    }
-    //let lista = this.state.comentarios;
-    //lista.push(novoComentario);
-    //this.setState({comentarios: lista});
-
+    const novoComentario = {...this.state.novoComentario, data: new Date()}
     this.setState({
-      comentarios: [ ...this.state.comentarios, novoComentario]
+      comentarios: [ ...this.state.comentarios, novoComentario],
+      novoComentario:{ nome:'', email:'', mensagem:''}
     })
   }
+  digitacao= evento =>{
+    const {name,value}= evento.target;    
+    this.setState({novoComentario: {...this.state.novoComentario, [name]: value}})
+  }
+
 
   render(){
     
@@ -54,7 +56,26 @@ class App extends Component{
               {comentario.mensagem}
              </Comentario>  
        ))}
-      <button onClick={this.adicionarComentario}>Adicionar um Comentário</button>
+      <form method="post" onSubmit={this.adicionarComentario}>
+        <h2>Adicionar Comentário</h2>
+        <div>
+          <input type="text" name="nome" value={this.state.novoComentario.nome}
+          onChange={this.digitacao}
+          placeholder="Digite o seu nome"/>
+        </div>
+        <div>
+          <input type="text" name="email" value={this.state.novoComentario.email}
+          onChange={this.digitacao}
+          placeholder="Digite o seu email"/>
+        </div>
+        <div>
+          <textarea name="mensagem" value={this.state.novoComentario.mensagem}
+          onChange={this.digitacao}
+          rows="4" />
+        </div>
+        <button type="submit">Adicionar Comentário</button>
+
+      </form>
       </div>
     );
   } 
