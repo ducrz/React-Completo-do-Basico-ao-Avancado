@@ -70,4 +70,13 @@ Extensão Chrome: React Developer Tools.
 
 27. Instalando pacotes
 
+date-fns.org
+
+npm install date-fns --save
+# or
+yarn add date-fns
+
+
+
 28. Recapitulando
+
