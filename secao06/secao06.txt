@@ -1,0 +1,76 @@
+Seção 06: React Hooks
+
+38. O que vamos aprender nesta seção?
+
+O que são Hooks.
+
+Vantagens de usar Hooks.
+
+Regras de utilização dos Hooks.
+
+Como manipular o estado usando o State Hook.
+
+Como manipular efeitos colaterais usando o Effect Hook.
+
+Alguns Hooks disponíveis.
+
+
+39. O que são Hooks?
+
+Funções que permitem que sejam usados os States e outros recursos do React sem que seja
+necessário escrever uma classe, ou seja, é possível usar todos os benefícios de uma classe diretamente
+em uma função.
+
+Síntaxe
+
+useNomeDoHook()
+
+useState()
+
+
+Hooks são funções que permitem a você "ligar-se" aos recursos de state e cliclo de vida
+do React a partir de componentes funcionais.
+
+Hooks não funcionam dentro de classes, eles permitem que você use React sem classes.
+
+
+Hooks são completamente opcionais. Você pode experimentar Hooks em alguns componentes
+sem reescrever nenhum código existente.
+
+
+Hooks são 100 retrocompatíveis. Hooks não possuem nenhuma quebra de compatibilidade.
+
+
+Hooks Básicos
+
+useState()
+useEffect()
+useContext()
+
+Hooks Adicionais
+
+useReducer()
+useCallback()
+useMemo()
+useRef()
+useImperativeHandle()
+useLayoutEffect()
+
+
+
+
+40. Usando State Hook
+
+
+import React, { useState } from 'react'
+
+
+41. Usando Effect Hook
+
+import React, { useState, useEffect } from 'react'
+
+
+42. Recapitulando
+
+
+
