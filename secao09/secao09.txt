@@ -1,0 +1,39 @@
+Seção 09: Validações de Formulário
+
+59. O que vamos aprender nesta seção?
+
+Validação de formulário
+
+Melhor gestão de eventos de formulários com formik.
+
+Esquema de validação com Yup.
+
+
+60. Formik
+
+https://formik.org/docs/overview
+
+npm install formik
+
+<Formik>
+
+</Formik>
+
+
+61. Validações simples
+
+
+62. Field
+
+63. Esquema de validação com Yup
+
+npm install yup
+
+
+import * as yup from 'yup';
+
+
+64. Recapitulando
+
+
+
