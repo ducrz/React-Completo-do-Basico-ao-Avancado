@@ -1,0 +1,52 @@
+Seção 10: Deploy.
+
+65. O que vamos aprender nesta seção?
+
+Como fazer o Deploy de uma aplicação React.
+
+Etapas de Implantação.
+
+Gerar um build com o código otimizado para implantação.
+
+Fazer o Deploy usando o Heroku.
+
+
+
+66. Etapas de Implantação
+
+
+
+Verificar se o domínio está mapeado corretamente no servidor.
+
+Configurar seu servidor HTTP para que a página index.html possa ser acessada.
+
+Gerar um build com o código otimizado.
+
+Fazer upload do build para o servidor.
+
+react-frutaria
+
+npm run build
+
+
+Pacote que auxilia a execução do projeto node.
+
+npm install -g serve
+
+
+67. Fazendo Deploy no Heroku
+
+https://www.heroku.com
+
+npm install serve
+
+
+npm run dev
+
+
+
+git push heroku main
+
+
+68. Recapitulando
+
