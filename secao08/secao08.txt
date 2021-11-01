@@ -1,0 +1,89 @@
+Seção 08: Redux
+
+49. O que vamos aprender nesta seção?
+
+O que é Redux?
+
+Como o Redux Funciona.
+
+O que são: Actions, Reducers e Store.
+
+Integrar uma aplicação React com Redux.
+
+
+Disparar ações para alterar o estado da aplicação.
+
+Visualizar alterações no estado da aplicação.
+
+
+
+50. O que é Redux
+
+Props X State
+
+
+
+COMPONENTES
+
+Componentes de função
+
+Componentes de Classe
+
+
+
+REDUX
+
+Redux é um "controlador de estados geral da aplicação".
+
+
+Component => Action => Reducer => Store
+
+
+51. Criando a aplicação
+
+
+npx create-react-app frutaria
+
+npm install redux react-redux
+
+
+52. Actions
+
+
+
+53. Reducers
+
+
+
+54. Store
+
+
+
+55. Dispatch
+
+import { useDispatch } from 'react-redux';
+
+
+
+
+
+
+56. CSS (opcional)
+
+
+
+57. Redux DevTools
+
+Redux DevTools
+
+https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=pt-BR
+
+
+const store = createStore(
+  reducers,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
+
+
+
+58. Recapitulando
