@@ -1,0 +1,42 @@
+Seção 07: Usando Rotas
+
+43. O que vamos aprender nesta seção?
+
+O que são rotas.
+
+Como funcionam as rotas em uma SPA (Single Page Application)
+
+Como criar menu de links.
+
+Configurar rotas para renderizar componentes específicos.
+
+Passar parâmetros na rotas.
+
+
+
+44. Usando rotas em uma SPA
+
+
+
+
+
+45. Construindo o Menu
+
+
+
+46. Definindo as rotas
+
+npm install react-router-dom
+
+import { BrowserRouter as Router, NavLink, Switch, Route } from 'react-router-dom';
+
+
+47. Passando parâmetros pelas rotas
+
+import { Link, useParams } from 'react-router-dom'
+
+
+48. Recapitulando
+
+
+
