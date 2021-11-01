@@ -13,6 +13,7 @@
     "redux": "^4.0.5",
     "serve": "^12.0.1"
   },
+  
   "scripts": {
     "dev": "react-scripts start",
     "start": "serve -s build",
